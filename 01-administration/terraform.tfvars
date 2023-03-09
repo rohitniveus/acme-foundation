@@ -15,6 +15,7 @@ terraform_service_accounts = {
         "roles/compute.networkAdmin",
         "roles/browser",
         "roles/resourcemanager.projectIamAdmin",
+        "roles/billing.resourceAssociations.create",
       ]
       shared = [
         "roles/dns.peer",
@@ -26,6 +27,7 @@ terraform_service_accounts = {
       "roles/compute.xpnAdmin",
       "roles/resourcemanager.folderViewer",
       "roles/accesscontextmanager.policyEditor",
+      "roles/billing.resourceAssociations.create",
     ]
   }
   "tf-project-creator-stg" = {
@@ -48,6 +50,7 @@ terraform_service_accounts = {
       "roles/compute.xpnAdmin",
       "roles/resourcemanager.folderViewer",
       "roles/accesscontextmanager.policyEditor",
+      "roles/billing.resourceAssociations.create",
     ]
   }
   "tf-project-creator-prd" = {
