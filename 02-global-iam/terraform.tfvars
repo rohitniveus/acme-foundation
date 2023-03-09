@@ -16,7 +16,7 @@ folders_iam = {
   "dev" = {
     bindings = {
       "roles/browser" = [
-        "user:ashwin.kallaje1@niveussolutions.com.com",
+        "user:ashwin.kallaje1@niveussolutions.com",
       ]
     }
     conditional_bindings = []
