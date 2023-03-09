@@ -25,7 +25,7 @@ locals {
 
 resource "google_compute_organization_security_policy" "policy" {
   provider     = google-beta
-  display_name = "common-firewall-rules"
+  display_name = "common-firewall-rule1s"
   parent       = "organizations/${var.org_id}"
 }
 
