@@ -5,8 +5,7 @@ data "tfe_outputs" "admin-global" {
 
 module "projects" {
   for_each                       = var.projects
-  source                         = "praveenadoni4456/terraform-google-project-factory/modules/core_project_factory"
-  #source                         = "terraform-google-modules/project-factory/google"
+  source                         = "terraform-google-modules/project-factory/google"
   version                        = "~> 14.1"
   name                           = each.key
   folder_id                      = data.tfe_outputs.admin-global.values.folders["shared"].folder_id
