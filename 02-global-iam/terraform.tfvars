@@ -5,11 +5,9 @@
 org_bindings = {
   "roles/billing.viewer" = [
     "user:ashwin.kallaje1@niveussolutions.com",
-    "user:banawath.naik@niveussolutions.com",
   ]
   "roles/resourcemanager.folderViewer" = [
     "user:ashwin.kallaje1@niveussolutions.com",
-    "user:banawath.naik@niveussolutions.com",
   ]
 }
 
@@ -19,7 +17,6 @@ folders_iam = {
     bindings = {
       "roles/browser" = [
         "user:ashwin.kallaje1@niveussolutions.com",
-        "user:banawath.naik@niveussolutions.com",
       ]
     }
     conditional_bindings = []
@@ -29,7 +26,6 @@ folders_iam = {
     bindings = {
       "roles/browser" = [
         "user:ashwin.kallaje1@niveussolutions.com",
-        "user:banawath.naik@niveussolutions.com",
       ]
     }
     conditional_bindings = []
@@ -39,7 +35,6 @@ folders_iam = {
     bindings = {
       "roles/browser" = [
         "user:ashwin.kallaje1@niveussolutions.com",
-        "user:banawath.naik@niveussolutions.com",
       ]
     }
     conditional_bindings = []
@@ -49,7 +44,6 @@ folders_iam = {
     bindings = {
       "roles/browser" = [
         "user:ashwin.kallaje1@niveussolutions.com",
-        "user:banawath.naik@niveussolutions.com",
       ]
     }
     conditional_bindings = []
@@ -59,13 +53,11 @@ folders_iam = {
 audit_bindings = {
   "roles/viewer" = [
     "user:ashwin.kallaje1@niveussolutions.com",
-    "user:banawath.naik@niveussolutions.com",
   ]
 }
 
 billing_project_bindings = {
   "roles/viewer" = [
      "user:ashwin.kallaje1@niveussolutions.com",
-     "user:banawath.naik@niveussolutions.com",
   ]
 }
