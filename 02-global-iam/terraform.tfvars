@@ -3,7 +3,7 @@
  #projects, etc.
 
 org_bindings = {
-  "roles/billing.viewer" = [
+  "roles/billing.admin" = [
     "user:ashwin.kallaje1@niveussolutions.com",
   ]
   "roles/resourcemanager.folderViewer" = [
@@ -15,7 +15,7 @@ folders_iam = {
   # Bindings for the acme-dev folder
   "dev" = {
     bindings = {
-      "roles/browser" = [
+      "roles/owner" = [
         "user:ashwin.kallaje1@niveussolutions.com",
       ]
     }
@@ -24,7 +24,7 @@ folders_iam = {
   # binding for the acme-stg folder
   "stg" = {
     bindings = {
-      "roles/browser" = [
+      "roles/owner" = [
         "user:ashwin.kallaje1@niveussolutions.com",
       ]
     }
@@ -33,7 +33,7 @@ folders_iam = {
   # Bindings to the acme-prd folder
   "prd" = {
     bindings = {
-      "roles/browser" = [
+      "roles/owner" = [
         "user:ashwin.kallaje1@niveussolutions.com",
       ]
     }
@@ -42,7 +42,7 @@ folders_iam = {
   # Bindings for the acme-shared folder
   "shared" = {
     bindings = {
-      "roles/browser" = [
+      "roles/owner" = [
         "user:ashwin.kallaje1@niveussolutions.com",
       ]
     }
@@ -51,13 +51,13 @@ folders_iam = {
 }
 
 audit_bindings = {
-  "roles/viewer" = [
+  "roles/owner" = [
     "user:ashwin.kallaje1@niveussolutions.com",
   ]
 }
 
 billing_project_bindings = {
-  "roles/viewer" = [
+  "roles/owner" = [
      "user:ashwin.kallaje1@niveussolutions.com",
   ]
 }
