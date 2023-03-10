@@ -13,6 +13,8 @@ module "admin_project" {
     environment       = "cloud-administration"
     application_name  = "cloud-administration"
     billing_code      = "1234"
+    #primary_contact   = "rohit.raikar@niveussolutions.com"
+    #secondary_contact = "rohit.raikar@niveussolutions.com"
     primary_contact   = "example1"
     secondary_contact = "example2"
     business_code     = "abcd"
