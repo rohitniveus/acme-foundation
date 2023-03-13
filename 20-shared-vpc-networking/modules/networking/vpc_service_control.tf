@@ -133,7 +133,7 @@ module "access_level_members" {
   version  = "~> 4.0"
 
   description = "${module.vpc[each.key].project_id}-${each.key} Access Level"
-  policy      = data.tfe_outputs.org-policies.values.access_context_manager_policy_ids[each.value.access_context_manager_policy_name]
+  #policy      = data.tfe_outputs.org-policies.values.access_context_manager_policy_ids[each.value.access_context_manager_policy_name]
   name        = "alp_${random_string.main[each.key].result}_members"
   members     = each.value.vpc_access_members
 }
@@ -173,7 +173,7 @@ module "regular_service_perimeter" {
   source   = "terraform-google-modules/vpc-service-controls/google//modules/regular_service_perimeter"
   version  = "~> 4.0"
 
-  policy         = data.tfe_outputs.org-policies.values.access_context_manager_policy_ids[each.value.access_context_manager_policy_name]
+  #policy         = data.tfe_outputs.org-policies.values.access_context_manager_policy_ids[each.value.access_context_manager_policy_name]
   perimeter_name = "sp_${random_string.main[each.key].result}_default_perimeter"
   description    = "${module.vpc[each.key].project_id}-${each.key} VPC Service Controls perimeter"
   resources      = [nonsensitive(data.tfe_outputs.host_project.values.projects[each.value.host_project].project_number)]
