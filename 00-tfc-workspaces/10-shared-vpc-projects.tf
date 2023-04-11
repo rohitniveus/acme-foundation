@@ -1,7 +1,7 @@
 resource "tfe_workspace" "shared-vpc-project-dev" {
   name                          = "10-shared-vpc-projects-dev"
   organization                  = var.tfc_organization
-  project_id                    = tfe_project.project.id
+  #project_id                    = tfe_project.project.id
   description                   = "Dev Shared VPC Project"
   tag_names                     = ["shared-vpc-project", "dev"]
   allow_destroy_plan            = true
@@ -63,7 +63,7 @@ resource "tfe_workspace_variable_set" "shared-vpc-project-wif-stg" {
 resource "tfe_workspace" "shared-vpc-project-prd" {
   name                          = "10-shared-vpc-projects-prd"
   organization                  = var.tfc_organization
-  project_id                    = tfe_project.project.id
+  #project_id                    = tfe_project.project.id
   description                   = "Prd Shared VPC Project"
   tag_names                     = ["shared-vpc-project", "prd"]
   allow_destroy_plan            = true
