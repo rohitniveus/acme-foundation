@@ -128,7 +128,6 @@ output "shared_vpc_networks" {
   value     = module.shared_vpcs.vpc
   sensitive = true
 }
-
 output "vpc_service_perimeter" {
   description = "VPC Service Permiter"
   value       = module.shared_vpcs.vpc_service_perimeter
